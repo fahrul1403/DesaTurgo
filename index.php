@@ -20,9 +20,9 @@
     <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="#" class="brand">
-            <i class='bx bxs-smile'></i>
-            <span class="text">Desa Turgo.com</span>
+            <img src="./img/logo.png" alt="Logo Desa Turgo" style="width: 250px; height: 130px; padding-top:20px">
         </a>
+
         <ul class="side-menu top">
             <li class="active">
                 <a href="index.php">

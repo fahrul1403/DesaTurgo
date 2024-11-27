@@ -8,213 +8,213 @@
     <link rel="stylesheet" href="style.css">
     <title>Desa Turgo</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
 
-        table thead th {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
+    table thead th {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
 
-        table tbody td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
+    table tbody td {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
 
-        table tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
-        .btn-edit {
-            background-color: #17a2b8;
-            color: white;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+    .btn-edit {
+        background-color: #17a2b8;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
 
-        .btn-edit:hover {
-            background-color: #138496;
-        }
+    .btn-edit:hover {
+        background-color: #138496;
+    }
 
-        .btn-delete {
-            background-color: #dc3545;
-            color: white;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+    .btn-delete {
+        background-color: #dc3545;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
 
-        .btn-delete:hover {
-            background-color: #c82333;
-        }
+    .btn-delete:hover {
+        background-color: #c82333;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
 
-        .container {
-            padding: 20px;
-        }
+    .container {
+        padding: 20px;
+    }
 
-        .head-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+    .head-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-        .head-title h1 {
-            font-size: 24px;
-            color: #333;
-        }
+    .head-title h1 {
+        font-size: 24px;
+        color: #333;
+    }
 
-        .btn-add {
-            background-color: #5d87ff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+    .btn-add {
+        background-color: #5d87ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
 
-        .btn-add:hover {
-            background-color: #5d87ff;
-        }
+    .btn-add:hover {
+        background-color: #5d87ff;
+    }
 
-        .table-wrapper {
-            width: 100%;
-            /* Pastikan elemen mengambil seluruh lebar */
-            max-width: 100%;
-            /* Hindari overflow */
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .table-wrapper {
+        width: 100%;
+        /* Pastikan elemen mengambil seluruh lebar */
+        max-width: 100%;
+        /* Hindari overflow */
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .table-wrapper ul {
-            list-style: none;
-            padding: 0;
-        }
+    .table-wrapper ul {
+        list-style: none;
+        padding: 0;
+    }
 
-        .table-wrapper ul li {
-            margin: 10px 0;
-        }
+    .table-wrapper ul li {
+        margin: 10px 0;
+    }
 
-        .table-wrapper ul li .title {
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
+    .table-wrapper ul li .title {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 
-        .table-wrapper ul li .title:hover {
-            color: #ff9800;
-        }
+    .table-wrapper ul li .title:hover {
+        color: #ff9800;
+    }
 
-        .table-wrapper ul li .sub-item {
-            margin-left: 20px;
-            background-color: #ffc107;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .table-wrapper ul li .sub-item {
+        margin-left: 20px;
+        background-color: #ffc107;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .table-wrapper ul li .sub-item span {
-            font-size: 16px;
-        }
+    .table-wrapper ul li .sub-item span {
+        font-size: 16px;
+    }
 
-        /* Main content */
-        .container {
-            margin-left: 250px;
-            padding: 20px;
-        }
+    /* Main content */
+    .container {
+        margin-left: 250px;
+        padding: 20px;
+    }
 
-        .head-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+    .head-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-        .head-title h1 {
-            font-size: 24px;
-            color: #333;
-        }
+    .head-title h1 {
+        font-size: 24px;
+        color: #333;
+    }
 
-        .table-wrapper {
-            background-color: #5d87ff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .table-wrapper {
+        background-color: #5d87ff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .table-wrapper ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .table-wrapper ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        .table-wrapper ul li {
-            margin: 10px 0;
-        }
+    .table-wrapper ul li {
+        margin: 10px 0;
+    }
 
-        .table-wrapper ul li .title {
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
+    .table-wrapper ul li .title {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
 
-        .table-wrapper ul li .sub-item {
-            margin-left: 40px;
-            background-color: #ffcc57;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .table-wrapper ul li .sub-item {
+        margin-left: 40px;
+        background-color: #ffcc57;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .table-wrapper ul li .sub-middle-item {
-            margin-left: 80px;
-            /* Geser lebih ke tengah */
-            background-color: #ffdd75;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .table-wrapper ul li .sub-middle-item {
+        margin-left: 80px;
+        /* Geser lebih ke tengah */
+        background-color: #ffdd75;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .table-wrapper ul li .sub-sub-item {
-            margin-left: 120px;
-            /* Geser lebih jauh ke dalam dibanding sub-middle-item */
-            background-color: #ffe27a;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .table-wrapper ul li .sub-sub-item {
+        margin-left: 120px;
+        /* Geser lebih jauh ke dalam dibanding sub-middle-item */
+        background-color: #ffe27a;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     </style>
 </head>
 
@@ -226,7 +226,7 @@
         </a>
         <ul class="side-menu top">
             <li>
-                <a href="index.php">
+                <a href="dashboard.php">
                     <i class='bx bxs-dashboard'></i>
                     <span class="text">Dashboard</span>
                 </a>
@@ -264,7 +264,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="logout">
+                <a href="index.php" class="logout">
                     <i class='bx bxs-log-out-circle'></i>
                     <span class="text">Logout</span>
                 </a>
